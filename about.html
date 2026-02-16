@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>About the System - Pig Disease Detection</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/footer.js"></script>
+</head>
+
+<body>
+  <div class="menu-container"></div>
+  <div class="content-container">
+    <div class="banner" style="background: url('img/image1.jpg') no-repeat center; background-size: cover; height: 200px;">
+      <div class="banner-table flex-column">
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin-small">About the Pig Disease Detection System</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="content-table flex-column">
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h3>Overview</h3>
+            <p>
+              This system combines IoT and AI to monitor pig health, helping farmers detect illnesses early and improve livestock management.
+            </p>
+
+            <h3>Components</h3>
+            <ul>
+              <li><strong>ESP32-CAM:</strong> Captures images or video for analysis.</li>
+              <li><strong>Machine Learning Model:</strong> Detects health status using Edge Impulse or server-based models.</li>
+              <li><strong>Flutter App:</strong> Displays live feed, health status, and alerts.</li>
+            </ul>
+
+            <h3>How It Works</h3>
+            <ol>
+              <li>The ESP32-CAM captures images when triggered (e.g., motion detection).</li>
+              <li>Images are processed to classify pig health (healthy or sick).</li>
+              <li>Results are sent to the Flutter app via Wi-Fi or MQTT.</li>
+            </ol>
+
+            <h3>Benefits</h3>
+            <ul>
+              <li>Early detection of health issues to reduce mortality.</li>
+              <li>Cost-effective monitoring with affordable hardware.</li>
+              <li>User-friendly app interface for farmers.</li>
+            </ul>
+
+            <h3>System Workflow</h3>
+            <p>
+              ESP32-CAM → Machine Learning Model → Flutter App
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-container"></div>
+  </div>
+</body>
+
+</html>

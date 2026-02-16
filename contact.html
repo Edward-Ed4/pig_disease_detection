@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Contact - Pig Disease Detection</title>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="css/frame.css"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="css/controls.css"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="css/custom.css"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/footer.js"></script>
+  </head>
+
+  <body>
+    <div class="menu-container"></div>
+    <div class="content-container">
+      <div class="banner" style="height: 200px; overflow: hidden">
+        <img
+          src="img/edward.jpg"
+          alt="Edward"
+          style="
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center 35%;
+            display: block;
+          "
+        />
+        <div
+          class="banner-table flex-column"
+          style="position: relative; top: -200px"
+        >
+          <div class="flex-row">
+            <div class="flex-item flex-column">
+              <h2 class="add-top-margin-small">Contact Us</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="content-table flex-column">
+          <div class="flex-row">
+            <div class="flex-item flex-column">
+              <form
+                id="contact-form"
+                action="https://formspree.io/f/your-form-id"
+                method="POST"
+              >
+                <label for="name">Name:</label><br />
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="custom-textbox stretch-on-mobile"
+                  required
+                /><br /><br />
+
+                <label for="email">Email:</label><br />
+                <input
+                  type="email"
+                  id="email"
+                  name="_replyto"
+                  class="custom-textbox stretch-on-mobile"
+                  required
+                /><br /><br />
+
+                <label for="message">Message:</label><br />
+                <textarea
+                  id="message"
+                  name="message"
+                  class="custom-textbox stretch-on-mobile"
+                  rows="5"
+                  required
+                ></textarea
+                ><br /><br />
+
+                <button
+                  type="submit"
+                  class="custom-button custom-button-primary"
+                >
+                  Send
+                </button>
+              </form>
+
+              <h3>Alternative Contact</h3>
+              <p>
+                Email:
+                <a href="mailto:support@pigdiseasedetection.com"
+                  >ebajuedward3@gmail.com</a
+                >
+              </p>
+              <p>
+                Follow us on
+                <a href="https://x.com/Edward343230762" target="_blank"
+                  >Twitter</a
+                >
+                and
+                <a
+                  href="https://www.linkedin.com/in/ebaju-edward"
+                  target="_blank"
+                  >LinkedIn</a
+                >.
+              </p>
+
+              <h3>FAQ</h3>
+              <p>
+                <strong>Q:</strong> What if the ESP32-CAM fails to connect to
+                Wi-Fi?<br />
+                <strong>A:</strong> Ensure your Wi-Fi credentials are correct
+                and the device is within range.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-container"></div>
+    </div>
+  </body>
+</html>

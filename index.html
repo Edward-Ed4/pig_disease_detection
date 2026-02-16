@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Pig Disease Detection</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/footer.js"></script>
+  <style>
+    .menu-index {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu-container"></div>
+  <div class="content-container">
+    <!-------------------------------------------------------------------------------------------->
+    <!--Start Header-->
+    <div class="banner" style="background: url('img/image1.jpg') no-repeat center; background-size: cover; height: 300px;"></div>
+    <div class="banner" style="background: linear-gradient(135deg, #2563eb, #3b82f6); color: white; height: 500px; display: flex; align-items: center; justify-content: center; text-align: center;">
+      <div class="banner-table flex-column" style="max-width: 900px; margin: 0 auto;">
+        <h1 style="font-size: 3em; font-weight: 700; margin-bottom: 20px;">Revolutionize Pig Farming with Smart Health Monitoring</h1>
+        <p style="font-size: 1.5em; margin-bottom: 30px;">Our IoT-powered system uses ESP32-CAM and a Flutter app to detect pig health issues in real-time, helping farmers save time and reduce losses.</p>
+        <p style="font-size: 1.1em; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto;">
+          Monitor your livestock effortlessly with cutting-edge technology. The ESP32-CAM captures images, analyzes health indicators, and sends instant updates to your smartphone via a user-friendly Flutter app. Early detection of illnesses means healthier pigs and a more profitable farm.
+        </p>
+        <div>
+          <a href="how-to-use.html" class="button primary" style="margin-right: 15px; padding: 15px 30px; font-size: 1.2em; text-decoration:none; color:white; background-color:#2563eb; border-radius:8px; display:inline-block; transition: background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#1e40af'" onmouseout="this.style.backgroundColor='#2563eb'">Learn How It Works</a>
+          <a href="about.html" class="button" style="padding: 15px 30px; font-size: 1.2em; text-decoration:none; color:#1f2937; background-color:#e5e7eb; border-radius:8px; display:inline-block; transition: background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#d1d5db'" onmouseout="this.style.backgroundColor='#e5e7eb'">Discover the System</a>
+        </div>
+        <div style="margin-top: 40px;">
+          <img src="https://via.placeholder.com/600x400?text=Pig+Health+Monitoring+System" alt="Pig Health Monitoring System" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+        </div>
+      </div>
+    </div>
+    <!--End Header-->
+    <!-------------------------------------------------------------------------------------------->
+    <div class="content">
+      <div class="content-table flex-column">
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Intro-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <img class="image" src="img/image2.jpeg">
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <p class="text add-top-margin">
+              How Our Smart Technology Works for Your Farm
+Our pig health monitoring system, powered by the ESP32-CAM and a user-friendly Flutter app, uses smart technology trained on over 200 pig pictures to detect if your livestock is healthy or sick. The graphs above show how well it’s learning, based on 80 training sessions (called "epochs"). Here’s what it means for you!
+
+The Accuracy Graph tracks how often the system gets it right. The blue line shows it starts at 40% and climbs to 80-90% with the pictures it practiced on—proof it’s getting sharp at spotting health issues in familiar pigs! The orange line, for new pictures it hasn’t seen, starts at 30-40% and settles around 50-60%. This gap tells us it’s better with pigs it knows, but we’re working to make it just as good with every pig on your farm.
+
+The Loss Graph shows how much the system struggles to learn. The blue line drops from 1.6 to 0.2-0.4, meaning it’s growing confident with the practice pictures. The orange line falls from 1.6 to 0.8-1.0 but wiggles a bit, showing it needs help with surprises. This suggests the system is a bit too focused on what it already knows—something like recognizing a pig you’ve seen before but missing a new one.
+
+We’re improving it by adding more pictures with different lighting and pig types, plus fine-tuning to catch every health issue early. This means healthier pigs, less worry, and more time for you to focus on your farm. Ready to see it in action? Learn How to Use or Explore More about how this technology can work for you!
+            </p>
+            <hr>
+          
+         
+          <div class="flex-item flex-item-stretch flex-column">
+            <img class="image" src="img/image5.jpeg">
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-item-stretch flex-column">
+            <p class="text">
+              - Subject: The image depicts two piglets lying on a concrete surface, showing visible signs of distress or illness.
+              <p>- Condition: Both piglets exhibit significant skin changes, including redness, discoloration, and possible lesions or sores, suggesting a health issue.
+              </p><p>- Prediction: The text overlay indicates the system predicted "skin changes" with an 84.79% confidence level, likely detected by the ESP32-CAM and analyzed via the machine learning model.
+              </p><p>- Context: This aligns with the pig health monitoring system’s purpose of identifying visible symptoms, such as skin abnormalities, which could indicate disease or injury.
+              </p><p>- Environment: The concrete floor suggests an indoor farm setting, possibly a pen or holding area.
+              - Implication: The high confidence level (84.79%) supports the system’s ability to detect skin-related health issues, though further veterinary assessment is needed to confirm the diagnosis and cause.
+            </p>
+          </div>
+        </div>
+        <hr>
+        <div class="flex-item flex-item-stretch flex-column">
+          <img class="image" src="img/image4.jpeg">
+        </div>
+      </div>
+      <div class="flex-row">
+        <div class="flex-item flex-item-stretch flex-column">
+          <p class="text">
+            The 99.89% confidence suggests the model is highly certain these pigs show no signs of common health issues, allowing farmers to focus attention on animals that may need care.
+          </p>
+        </div>
+      </div>
+      <hr>
+    <div class="footer-container"></div>
+  </div>
+</body>
+
+</html>

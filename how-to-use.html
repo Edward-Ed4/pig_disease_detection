@@ -1,85 +1,171 @@
 <!doctype html>
 <html>
+  <head>
+    <title>How to Use - Pig Disease Detection</title>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="css/frame.css"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="css/controls.css"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="css/custom.css"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/footer.js"></script>
+  </head>
 
-<head>
-  <title>How to Use - Pig Disease Detection</title>
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/menu.js"></script>
-  <script src="js/footer.js"></script>
-</head>
+  <body>
+    <div class="menu-container"></div>
+    <div class="content-container">
+      <!-- replaced fixed-height banner with padding so heading isn’t chopped on phones -->
+      <!-- removed heading to let image stand alone -->
+      <div
+        class="banner"
+        style="
+          background: url(&quot;img/image4.jpeg&quot;) no-repeat center;
+          background-size: cover;
+          padding: 80px 0;
+        "
+      >
+      </div>
 
-<body>
-  <div class="menu-container"></div>
-  <div class="content-container">
-    <!-- replaced fixed-height banner with padding so heading isn’t chopped on phones -->
-    <div class="banner" style="background: url('img/image4.jpeg') no-repeat center; background-size: cover; padding: 60px 0;">
-      <div class="banner-table flex-column">
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 class="add-top-margin-small">How to Use the Pig Disease Detection System</h2>
+      <div class="content">
+        <div class="content-table flex-column">
+          <div class="flex-row">
+            <div class="flex-item flex-column">
+              <h3>Step 1: Switch On the ESP32-CAM</h3>
+              <img
+                src="https://via.placeholder.com/600x400?text=Hardware+Setup"
+                alt="Hardware Setup"
+                style="max-width: 100%; height: auto; margin-bottom: 15px"
+              />
+              <ul>
+                <li>Power on the ESP32-CAM device using the power supply.</li>
+                <li>
+                  Ensure the device is connected to Wi-Fi network for streaming.
+                </li>
+              </ul>
+
+              <h3>Step 2: Launch the Mobile App</h3>
+              <img
+                src="https://via.placeholder.com/600x400?text=Flutter+App+Setup"
+                alt="Flutter App Setup"
+                style="max-width: 100%; height: auto; margin-bottom: 15px"
+              />
+              <ul>
+                <li>
+                  Open the pig disease detection app on your mobile phone.
+                </li>
+                <li>
+                  Connect the app to the ESP32-CAM stream by entering the device
+                  IP address.
+                </li>
+              </ul>
+
+              <h3>Step 3: Start Streaming and Detecting</h3>
+              <img
+                src="https://via.placeholder.com/600x400?text=Programming+ESP32-CAM"
+                alt="Programming ESP32-CAM"
+                style="max-width: 100%; height: auto; margin-bottom: 15px"
+              />
+              <ul>
+                <li>
+                  Start the live video stream from the ESP32-CAM on the app.
+                </li>
+                <li>
+                  The app analyzes the video feed to detect pig health status.
+                </li>
+                <li>
+                  View real-time detection results such as “Healthy” or “Sick”
+                  labels.
+                </li>
+              </ul>
+
+              <h3>Step 4: Monitor and Take Action</h3>
+              <img
+                src="https://via.placeholder.com/600x400?text=Monitoring+Pig+Health"
+                alt="Monitoring Pig Health"
+                style="max-width: 100%; height: auto; margin-bottom: 15px"
+              />
+              <ul>
+                <li>Receive notifications for any detected sick pigs.</li>
+                <li>Take appropriate action based on the detection results.</li>
+                <li>
+                  Troubleshoot common issues like connectivity or camera errors
+                  if needed.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex-row" style="margin-top: 40px">
+            <div class="flex-item flex-column">
+              <h3>Demonstration Video</h3>
+              <video
+                width="800"
+                height="600"
+                controls
+                poster="img/image11.png"
+                style="
+                  max-width: 30%;
+                  height: auto;
+                  border-radius: 10px;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                "
+              >
+                <source
+                  src="vid/WhatsApp Video 2025-07-28 at 9.04.08 PM.mp4"
+                  type="video/mp4"
+                />
+                <p>
+                  Your browser doesn't support HTML5 video.
+                  <a href="vid/WhatsApp Video 2025-07-28 at 9.04.08 PM.mp4"
+                    >Download the video</a
+                  >
+                  instead.
+                </p>
+              </video>
+            </div>
           </div>
         </div>
       </div>
+
+      <div class="footer-container"></div>
     </div>
-
-    <div class="content">
-      <div class="content-table flex-column">
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h3>Step 1: Switch On the ESP32-CAM</h3>
-            <img src="https://via.placeholder.com/600x400?text=Hardware+Setup" alt="Hardware Setup" style="max-width: 100%; height: auto; margin-bottom: 15px;">
-            <ul>
-              <li>Power on the ESP32-CAM device using the power supply.</li>
-              <li>Ensure the device is connected to Wi-Fi network for streaming.</li>
-            </ul>
-
-            <h3>Step 2: Launch the Mobile App</h3>
-            <img src="https://via.placeholder.com/600x400?text=Flutter+App+Setup" alt="Flutter App Setup" style="max-width: 100%; height: auto; margin-bottom: 15px;">
-            <ul>
-              <li>Open the pig disease detection app on your mobile phone.</li>
-              <li>Connect the app to the ESP32-CAM stream by entering the device IP address.</li>
-            </ul>
-
-            <h3>Step 3: Start Streaming and Detecting</h3>
-            <img src="https://via.placeholder.com/600x400?text=Programming+ESP32-CAM" alt="Programming ESP32-CAM" style="max-width: 100%; height: auto; margin-bottom: 15px;">
-            <ul>
-              <li>Start the live video stream from the ESP32-CAM on the app.</li>
-              <li>The app analyzes the video feed to detect pig health status.</li>
-              <li>View real-time detection results such as “Healthy” or “Sick” labels.</li>
-            </ul>
-
-            <h3>Step 4: Monitor and Take Action</h3>
-            <img src="https://via.placeholder.com/600x400?text=Monitoring+Pig+Health" alt="Monitoring Pig Health" style="max-width: 100%; height: auto; margin-bottom: 15px;">
-            <ul>
-              <li>Receive notifications for any detected sick pigs.</li>
-              <li>Take appropriate action based on the detection results.</li>
-              <li>Troubleshoot common issues like connectivity or camera errors if needed.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="flex-row" style="margin-top: 40px;">
-          <div class="flex-item flex-column">
-            <h3>Demonstration Video</h3>
-            <video width="800" height="600"  controls poster="img/image11.png" style="max-width: 30%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-              <source src="vid/WhatsApp Video 2025-07-28 at 9.04.08 PM.mp4" type="video/mp4">
-              <p>Your browser doesn't support HTML5 video.
-                <a href="vid/WhatsApp Video 2025-07-28 at 9.04.08 PM.mp4">Download the video</a> instead.</p>
-            </video>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-container"></div>
-  </div>
-</body>
-
+  </body>
 </html>
